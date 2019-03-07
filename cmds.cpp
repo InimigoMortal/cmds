@@ -16,7 +16,7 @@ int main(){
 	return 0;
 }
 
-void multi(int n1 , int n2){ // faz contas de * + - e / com os 2 números colocados.
+void multi(int n1 , int n2){ // faz contas de * + - e / com os 2 nÃºmeros colocados.
 	cout << "RESULTADO (*): " << n1*n2 << endl;
 	cout << "RESULTADO (+): " << n1+n2 << endl;
 	cout << "RESULTADO (-): " << abs(n1-n2)<< endl;
@@ -44,7 +44,7 @@ void media(){
 		cin >> n[i];
 	}
 	for(int i = 0 ; i < tam ; i++)
-		total += num[i];
+		total += n[i];
 	cout <<fixed;
 	cout << endl;
 	cout << "RESULTADO: " << total/tam << endl;
@@ -263,7 +263,7 @@ void soma(int tam){
 
 
 
-void cmds(string r){ //Comando principal do programa. É responsável pelo chamamento dos outros comandos.
+void cmds(string r){ //Comando principal do programa. Ã‰ responsÃ¡vel pelo chamamento dos outros comandos.
 	if(r=="multi"){
 		int um,dois;
 		cout << "numero: "; "\n";
@@ -356,7 +356,7 @@ void cmds(string r){ //Comando principal do programa. É responsável pelo chamame
           r!="corf" && r!="cf" && r!="limpar" && r!="ajuda" &&
           r!="cls" && r!="l" && r!="media" && r!="ajuda"
          && r!="lista" && r!="help" && r!="sair" && r!="s" &&
-         r!="exit" && r!="tabela" && r!="multi" && r!= "soma" ){ // se o usuário digitar um comando inexistente o programa exibe mensagem de erro
+         r!="exit" && r!="tabela" && r!="multi" && r!= "soma" ){ // se o usuÃ¡rio digitar um comando inexistente o programa exibe mensagem de erro
         cout << "Comando Invalido! Digite ajuda para lista de comandos!\n";
 	}
 }
